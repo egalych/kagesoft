@@ -360,22 +360,29 @@ img {
     text-align: center;
 }
 
+.section-points .row {
+    margin-bottom: 20px;
+}
+
 .section-points .fa {
     background: #28a7e9;
     border-radius: 50%;
     color: #fff;
     display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     text-align: center;
+    font-size: 40px;
 }
 
 
 .bullets-image {
     float: left;
     height: 45px;
-    margin-right: 20px
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 18px;
 }
 
 .bullets p {
@@ -396,6 +403,10 @@ footer ul {
     padding: 0;
 }
 
+footer h4 {
+    padding-top: 20px;
+}
+
 footer li {
     padding-top: 20px;
 }
@@ -410,6 +421,10 @@ footer ul a:hover, a:active, a:visited:active {
 }
 
 /* end footer */
+
+.dropdown-backdrop {
+    position: static;
+}
 
 @media screen and ( max-width: 991px ) {
     .templatemo-box {
