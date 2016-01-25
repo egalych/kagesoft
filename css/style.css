@@ -95,7 +95,7 @@ img {
 .sk-spinner-rotating-plane.sk-spinner {
     width: 30px;
     height: 30px;
-    background-color: #28a7e9;
+    background-color: #5997b8;
     margin: 0 auto;
     -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
     animation: sk-rotatePlane 1.2s infinite ease-in-out;
@@ -146,7 +146,7 @@ img {
 }
 
 .navbar-default .navbar-brand {
-    color: #28a7e9;
+    color: #5997b8;
     font-size: 30px;
     font-weight: bold;
     height: 70px;
@@ -164,7 +164,7 @@ img {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus,
 .navbar-default .nav li a.current {
-    color: #28a7e9;
+    color: #5997b8;
 }
 
 .navbar-default .navbar-toggle {
@@ -173,7 +173,7 @@ img {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background: #28a7e9;
+    background: #5997b8;
     border-color: transparent;
 }
 
@@ -229,7 +229,7 @@ img {
 }
 
 #divider .fa {
-    color: #28a7e9;
+    color: #5997b8;
     font-size: 60px;
 }
 
@@ -254,7 +254,7 @@ img {
 }
 
 #services .fa {
-    background: #28a7e9;
+    background: #5997b8;
     border-radius: 50%;
     color: #fff;
     display: inline-block;
@@ -283,7 +283,7 @@ img {
 }
 
 #contact address .fa {
-    background: #28a7e9;
+    background: #5997b8;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -309,7 +309,7 @@ img {
 }
 
 #contact input[type="submit"] {
-    background: #28a7e9;
+    background: #5997b8;
     color: #fff;
     font-weight: bold;
     transition: all 0.3s ease;
@@ -365,7 +365,7 @@ img {
 }
 
 .section-points .fa {
-    background: #28a7e9;
+    background: #5997b8;
     border-radius: 50%;
     color: #fff;
     display: inline-block;
@@ -421,6 +421,13 @@ footer ul a:hover, a:active, a:visited:active {
 }
 
 /* end footer */
+
+#thanks {
+    margin-top: 70px;
+    text-align: center;
+    width: 100%;
+    padding: 40px;
+}
 
 .dropdown-backdrop {
     position: static;

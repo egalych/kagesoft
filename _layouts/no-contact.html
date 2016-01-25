@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+<!-- start preloader -->
+<div class="preloader">
+    <div class="sk-spinner sk-spinner-rotating-plane"></div>
+</div>
+<!-- end preloader -->
+
+{% include navigation.html %}
+
+{{ content }}
+
+{% include footer.html %}
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

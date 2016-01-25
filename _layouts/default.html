@@ -1,63 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
 
-    <!-- animate css -->
-    <link rel="stylesheet" href="css/animate.min.css">
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- google font -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,800' rel='stylesheet' type='text/css'>
+{% include head.html %}
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
-
-</head>
 <body>
 <!-- start preloader -->
 <div class="preloader">
     <div class="sk-spinner sk-spinner-rotating-plane"></div>
 </div>
 <!-- end preloader -->
-<!-- start navigation -->
-<nav class="navbar navbar-default navbar-fixed-top templatemo-nav" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="index" class="navbar-brand">kagesoft</a>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right text-uppercase">
-                <li><a href="index">Home</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="web">Web Development</a></li>
-                        <li><a href="workflow">Workflow Automation</a></li>
-                        <li><a href="integration">Enterprise Integration</a></li>
-                        <li><a href="data">Data Warehousing</a></li>
-                    </ul>
-                </li>
-                <li><a href="approach">Approach</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<!-- end navigation -->
+
+{% include navigation.html %}
 
 {{ content }}
 
@@ -82,22 +35,23 @@
                 </div>
                 <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="contact-form">
-                        <form action="#" method="post">
+                        <form action="//formspree.io/contact@kagesoft.com" method="post">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Name">
+                                <input type="text" class="form-control" name="name" placeholder="Name">
                             </div>
                             <div class="col-md-6">
-                                <input type="email" class="form-control" placeholder="Email">
+                                <input type="email" class="form-control" name="email" placeholder="Email">
                             </div>
                             <div class="col-md-12">
-                                <input type="text" class="form-control" placeholder="Subject">
+                                <input type="text" class="form-control" name="subject" placeholder="Subject">
                             </div>
                             <div class="col-md-12">
-                                <textarea class="form-control" placeholder="Message" rows="4"></textarea>
+                                <textarea class="form-control" name="message" placeholder="Message" rows="4" required></textarea>
                             </div>
                             <div class="col-md-8">
                                 <input type="submit" class="form-control text-uppercase" value="Send">
                             </div>
+                            <input id="location" type="hidden" name="_next" value="" />
                         </form>
                     </div>
                 </div>
@@ -106,39 +60,9 @@
     </div>
 </section>
 <!-- end contact -->
-<!-- start footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="web">Web Application Development</a></li>
-                    <li><a href="integration">Enterprise Integration Solutions</a></li>
-                    <li><a href="workflow">Custom Workflow Automation Development</a></li>
-                    <li><a href="data">Data Warehousing Solutions</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h4>Technologies</h4>
-                <ul>
-                    <li><a href="web#technologies">Web Technologies</a></li>
-                    <li><a href="integration#soa">Service Oriented Architecture</a></li>
-                    <li><a href="integration#etl">Extract, Transform and Load</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h4>About</h4>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="approach">Approach</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- end footer -->
+
+{% include footer.html %}
+
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/wow.min.js"></script>

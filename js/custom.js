@@ -5,4 +5,5 @@ $(window).load(function(){
 
 $(function() {
     new WOW().init();
+    $("#location").val("http://" + window.location.host + "/thanks");
 })
